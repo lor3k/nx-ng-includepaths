@@ -3,7 +3,7 @@
   "projects": {
     "ngapp": {
       "projectType": "application",
-      "root": "apps/ngapp",
+      "root": "",
       "sourceRoot": "apps/ngapp/src",
       "prefix": "nxstyl",
       "architect": {
@@ -18,7 +18,10 @@
             "tsConfig": "apps/ngapp/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["apps/ngapp/src/favicon.ico", "apps/ngapp/src/assets"],
-            "styles": ["apps/ngapp/src/styles.scss"],
+            "styles": [],
+            "stylePreprocessorOptions": {
+              "includePaths": ["libs/sdf/dfg/fgh/styles"]
+            },
             "scripts": []
           },
           "configurations": {
